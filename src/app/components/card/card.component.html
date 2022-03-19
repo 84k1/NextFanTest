@@ -1,0 +1,23 @@
+<div *ngIf="card">
+  <div class="grid grid-cols-1 sm:grid-cols-1  gap-5">
+    <div class="rounded overflow-hidden shadow-lg">
+      <div class="flex items-center justify-center rounded md:h-72  h-48 overflow-hidden">
+        <img class="object-cover object-center" src="{{card.imageUrl}}" alt="Mountain">
+      </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+          <div style="display: flex;">
+            <svg class="h-8 w-8 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
+            <svg class="h-8 w-8 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="12 4 4 8 12 12 20 8 12 4" />  <polyline points="4 12 12 16 20 12" />  <polyline points="4 16 12 20 20 16" /></svg>
+          </div>
+        </div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{{card.name}}</div>
+        <p class="text-gray-700 text-base">{{card.description}}</p>
+        <p class="text-gray-700 text-base">{{card.dates}}</p>
+        <p class="font-bold text-base">{{card.price}} $</p>
+      </div>
+    </div>
+  </div>
+</div>

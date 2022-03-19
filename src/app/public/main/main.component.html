@@ -1,0 +1,10 @@
+
+<div class="container mx-auto px-4">
+  <div class="font-bold text-center text-xl mb-2">Top Rated PLATFORM</div>
+
+  <div *ngIf="cards.length">
+    <app-top-cards [inputCards]="cards"  
+    class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-1">
+    </app-top-cards>
+  </div>
+</div>
